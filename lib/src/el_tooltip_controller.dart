@@ -1,3 +1,9 @@
+import 'package:el_tooltip/src/enum/el_tooltip_status.dart';
+import 'package:flutter/material.dart';
+
+typedef ShowElTooltip = Future<void> Function();
+typedef HideElTooltip = Future<void> Function();
+
 class ElTooltipController extends ValueNotifier<ElTooltipStatus> {
   ElTooltipController()
       : _show = _defaultThrow,
